@@ -25,7 +25,7 @@ export default function Navbar() {
               className="rounded-full"
             />
 
-            <div className="hidden sm:block">
+            <div className=" sm:block">
               <h1 className="text-xl font-bold text-slate-900">كنوز الذوق</h1>
 
               <p className="text-xs text-slate-500">للتشطيبات والديكورات</p>
