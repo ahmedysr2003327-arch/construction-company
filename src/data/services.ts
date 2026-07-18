@@ -1,48 +1,56 @@
+
 import {
   FaPaintRoller,
   FaBolt,
-  FaBorderAll,
+  FaTools,
+  FaBuilding,
+  FaHardHat,
 } from "react-icons/fa";
-
-import {
-  MdOutlineConstruction,
-} from "react-icons/md";
-
-import {
-  GiBrickWall,
-} from "react-icons/gi";
-
-import { PiBuildingOfficeBold } from "react-icons/pi";
 
 export const services = [
   {
     title: "التشطيبات الداخلية",
     description: "تنفيذ جميع أعمال التشطيبات الداخلية باحترافية وجودة عالية.",
-    icon: MdOutlineConstruction,
+    icon: FaPaintRoller,
   },
   {
-    title: "الديكورات",
-    description: "تصميم وتنفيذ أحدث الديكورات العصرية والكلاسيكية.",
+    title: "التشطيبات الخارجية",
+    description: "تشطيبات خارجية متكاملة بأفضل الخامات.",
+    icon: FaBuilding,
+  },
+  {
+    title: "البلاط والسيراميك",
+    description: "تركيب البلاط والسيراميك بدقة وإتقان.",
+    icon: FaTools,
+  },
+  {
+    title: "الدهانات",
+    description: "أعمال الدهانات الداخلية والخارجية بأحدث التقنيات.",
     icon: FaPaintRoller,
   },
   {
     title: "الجبس بورد",
-    description: "أسقف وجدران جبس بورد بأفضل الخامات.",
-    icon: GiBrickWall,
+    description: "تصميم وتنفيذ ديكورات الجبس بورد الحديثة.",
+    icon: FaHardHat,
   },
   {
     title: "الكهرباء",
-    description: "تنفيذ أعمال الكهرباء وفق أعلى معايير الأمان.",
+    description: "تنفيذ وتمديد جميع الأعمال الكهربائية.",
     icon: FaBolt,
   },
   {
-    title: "البلاط",
-    description: "تركيب جميع أنواع البلاط والسيراميك والبورسلان.",
-    icon: FaBorderAll,
+    title: "السباكة",
+    description: "تنفيذ أعمال السباكة وفق أعلى معايير الجودة.",
+    icon: FaTools,
   },
   {
     title: "الواجهات الزجاجية والكلادينج",
-    description: "تنفيذ واجهات حديثة للمباني والمحلات.",
-    icon: PiBuildingOfficeBold,
+    description: "تصميم وتنفيذ الواجهات الزجاجية والكلادينج.",
+    icon: FaBuilding,
+  },
+  {
+    title: "أعمال الحديد والتلييس",
+    description: "تنفيذ أعمال الحديد والتلييس باحترافية.",
+    icon: FaHardHat,
   },
 ];

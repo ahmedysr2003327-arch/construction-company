@@ -5,10 +5,12 @@ import { navigationLinks } from "@/data/navigation";
 import Image from "next/image";
 import { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
-import { usePathname } from "next/navigation";
+
+import useActiveSection from "@/hooks/useActiveSection";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+
+  const activeSection = useActiveSection();
   return (
     <header className="sticky top-0 z-50 border-b bg-white/90 backdrop-blur">
       <Container>
@@ -31,14 +33,14 @@ export default function Navbar() {
           </Link>
 
           {/* Navigation */}
-          <ul className="hidden items-center gap-8 md:flex">
+          <ul className="hidden gap-8 md:flex">
             {navigationLinks.map((link) => (
-              <li key={link.href}>
+              <li key={link.id}>
                 <Link
                   href={link.href}
-                  className={`transition duration-300 ${
-                    pathname === link.href
-                      ? "text-amber-600 font-semibold"
+                  className={`font-medium transition-colors duration-300 ${
+                    activeSection === link.id
+                      ? "text-amber-600"
                       : "text-slate-700 hover:text-amber-600"
                   }`}
                 >
@@ -57,7 +59,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://wa.me/966565063320"
+              href="https://wa.me/966565063320?text=السلام عليكم، أرغب في الاستفسار عن خدماتكم."
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg bg-amber-600 px-5 py-2.5 text-white transition hover:bg-amber-700"
@@ -76,7 +78,7 @@ export default function Navbar() {
           <div className="border-t bg-white md:hidden">
             <ul className="flex flex-col py-4">
               {navigationLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.id}>
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
@@ -88,7 +90,7 @@ export default function Navbar() {
               ))}
 
               <a
-                href="https://wa.me/966565063320"
+                href="https://wa.me/966565063320?text=السلام عليكم، أرغب في الاستفسار عن خدماتكم."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-4 mt-4 rounded-lg bg-amber-600 py-3 text-center text-white"
