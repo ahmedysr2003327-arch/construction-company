@@ -1,22 +1,24 @@
 export const navigationLinks = [
   {
     title: "الرئيسية",
-    href: "#home",
-    id: "home",
+    href: "/",
+    id: "home"
   },
+  
   {
-    title: "خدماتنا",
-    href: "#services",
-    id: "services",
-  },
-  {
-    title: "لماذا نحن",
-    href: "#why-us",
-    id: "why-us",
+    title: "الخدمات",
+    href: "/#services",
+    id: "services"
   },
   {
     title: "المشاريع",
-    href: "#projects",
-    id: "projects",
+    href: "/#projects",
+    id: "projects"
   },
+  {
+    title: "لماذا نحن",
+    href: "/#why-us",
+    id: "why-us"
+  },
+  
 ];

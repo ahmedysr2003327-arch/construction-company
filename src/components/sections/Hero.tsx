@@ -7,7 +7,7 @@ import Reveal from "../animations/Reveal";
 export default function Hero() {
   return (
     <Reveal>
-      <section id="home" className="py-10 lg:py-15">
+      <section id="home" className="py-24 lg:py-15 ">
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Text */}
