@@ -12,7 +12,7 @@ export const company = {
 
   email: "info@konoozalthoq.com",
 
-  address: "الرياض، المملكة العربية السعودية",
+  address: "جدة، المملكة العربية السعودية",
 
   website: "https://konoozalthoq.com",
 

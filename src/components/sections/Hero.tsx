@@ -19,7 +19,9 @@ export default function Hero() {
               <h1 className="text-4xl font-extrabold leading-tight text-slate-900 lg:text-6xl">
                 نحول أفكارك إلى واقع بأعلى معايير الجودة
               </h1>
-
+              <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-5 py-2 text-amber-700">
+                📍 نخدم جميع أحياء جدة فقط
+              </div>
               <p className="text-lg leading-8 text-slate-600">
                 نقدم خدمات التشطيبات الداخلية والخارجية، الديكورات، الجبس بورد،
                 الكهرباء، البلاط، الكلادينج والواجهات الزجاجية بخبرة وجودة

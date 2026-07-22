@@ -26,7 +26,9 @@ export default function Navbar() {
             />
 
             <div className=" sm:block">
-              <h1 className="text-xl font-bold text-slate-900">كنوز الذوق</h1>
+              <h1 className="text-xl font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
+                كنوز الذوق
+              </h1>
 
               <p className="text-xs text-slate-500">للتشطيبات والديكورات</p>
             </div>

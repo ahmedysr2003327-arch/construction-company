@@ -1,10 +1,10 @@
 export const statistics = [
   {
-    number: "+500",
+    number: "+100",
     label: "مشروع مكتمل",
   },
   {
-    number: "+15",
+    number: "+10",
     label: "سنة خبرة",
   },
   {
