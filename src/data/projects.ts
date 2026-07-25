@@ -36,6 +36,15 @@ export const servicesGallery = [
       "/images/projects/iron/2.jpg",
     ],
   },
+  {
+    id: 5,
+    title: "أعمال كهرباء",
+    images: [
+      "/images/projects/electricity/1.jpg",
+      "/images/projects/electricity/2.jpg",
+      "/images/projects/electricity/3.jpg",
+    ],
+  }, 
 ];
 // توليد جميع المشاريع تلقائياً
 export const projects = servicesGallery.flatMap((service) =>
