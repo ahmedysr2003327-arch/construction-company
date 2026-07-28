@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "كنوز الذوق",
     short_name: "كنوز الذوق",
-    description: "شركة تشطيبات وديكورات",
+    description: "مقاول تشطيبات وديكورات",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
