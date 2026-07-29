@@ -5,6 +5,7 @@ import {
   FaTools,
   FaBuilding,
   FaHardHat,
+  FaDraftingCompass,
 } from "react-icons/fa";
 
 export const services = [
@@ -53,4 +54,9 @@ export const services = [
     description: "تنفيذ أعمال الحديد والتلييس باحترافية.",
     icon: FaHardHat,
   },
+  {
+  title: "تصميم المخططات",
+  description: "تصميم مخططات معمارية وإنشائية متكاملة تناسب احتياجات المشروع.",
+  icon: FaDraftingCompass,
+},
 ];
