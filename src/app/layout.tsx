@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cairo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
-
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { company } from "@/data/company";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import Footer from "@/components/layout/Footer";
@@ -144,6 +144,7 @@ export default function RootLayout({
         <StructuredData />
         <Navbar />
         {children}
+        <GoogleAnalytics />
         <Footer />
         <FloatingWhatsApp />
         <BackToTop />
