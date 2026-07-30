@@ -108,7 +108,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/public/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "كنوز الذوق",
@@ -120,7 +120,7 @@ export const metadata: Metadata = {
     title: "كنوز الذوق | التشطيبات والديكورات في السعودية",
     description:
       "شركة كنوز الذوق متخصصة في أعمال التشطيبات الداخلية والخارجية.",
-    images: ["/images/og-image.jpg"],
+    images: ["/public/og-image.jpg"],
   },
 };
 

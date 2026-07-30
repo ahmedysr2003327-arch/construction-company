@@ -7,6 +7,8 @@ export const servicesGallery = [
       "/images/projects/plumbing/1.jpg",
       "/images/projects/plumbing/2.jpg",
       "/images/projects/plumbing/3.jpg",
+      "/images/projects/plumbing/4.jpg",
+      "/images/projects/plumbing/5.jpg",  
     ],
   },
   {
