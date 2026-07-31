@@ -20,5 +20,10 @@ export const navigationLinks = [
     href: "/#why-us",
     id: "why-us"
   },
+  {
+    title: "نبذة عن المؤسسة",
+    href: "/#about-company",
+    id: "about-company"
+  }
   
 ];
