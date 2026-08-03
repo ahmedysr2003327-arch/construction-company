@@ -30,7 +30,7 @@ export default function Navbar() {
                 كنوز الذوق
               </h1>
 
-              <p className="text-xs text-slate-500">للتشطيبات والديكورات</p>
+              <p className="text-xs text-slate-500">تشطيبات وديكورات في جدة</p>
             </div>
           </Link>
 

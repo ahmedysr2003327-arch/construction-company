@@ -26,16 +26,17 @@ export default function AboutCompany() {
     <section id="about-company" className="bg-white py-24">
       <Container>
         <SectionTitle
-          title="نبذة عن المؤسسة"
-          subtitle="تعرف أكثر على مؤسسة كنوز الذوق وخبرتها في مجال التشطيبات والديكورات."
+          title="نبذة عن مؤسسه كنوز الذوق"
+          subtitle="مقاول تشطيبات وديكورات في جدة يقدم حلولًا متكاملة من التشطيبات إلى الديكورات والواجهات بأعلى مستوى من الجودة."
         />
 
         <div className="mx-auto mt-12 max-w-5xl rounded-3xl bg-slate-50 p-8 shadow-sm md:p-12">
           <p className="text-lg leading-9 text-slate-700">
             <span className="font-bold text-slate-900">كنوز الذوق</span> هي
-            واحدة من أعرق المؤسسات في مجال المقاولات ومواد البناء، تأسست عام
+            مؤسسه سعودية رائدة في مجال المقاولات والتشطيبات، تأسست عام
             <span className="font-bold text-amber-600"> 1998 </span>
-            على يد نخبة من المهندسين والخبراء في مجال البناء والتشييد.
+            على يد نخبة من المهندسين والخبراء في مجال البناء والتشييد، وتقدم
+            خدماتها في جدة بأعلى معايير الجودة والإتقان.
           </p>
 
           <p className="mt-6 text-lg leading-9 text-slate-700">
@@ -46,7 +47,7 @@ export default function AboutCompany() {
           </p>
 
           <p className="mt-6 rounded-xl bg-amber-50 p-4 text-center font-semibold text-amber-700">
-            📍 نقدم خدماتنا في جميع أحياء مدينة جدة.
+            📍 نقدم خدماتنا في جميع أحياء جدة والمناطق المجاورة.
           </p>
 
           <div className="mt-12 grid grid-cols-2 gap-5 md:grid-cols-4">

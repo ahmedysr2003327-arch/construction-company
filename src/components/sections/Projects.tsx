@@ -9,8 +9,8 @@ export default function Projects() {
     <section id="projects" className="py-24">
       <Container>
         <SectionTitle
-          title="آخر أعمالنا"
-          subtitle="نفخر بتقديم مجموعة من المشاريع التي تعكس جودة تنفيذنا واهتمامنا بأدق التفاصيل."
+          title="أعمالنا في التشطيبات والديكورات"
+          subtitle="أعمال تنفيذية متنوعة تعكس خبرتنا في التشطيبات والديكورات داخل جدة، مع تركيز واضح على الجودة والتفاصيل."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -18,12 +18,7 @@ export default function Projects() {
             service.images
               .slice(0, 2)
               .map((image) => (
-                <ProjectCard
-                  key={image}
-                  image={image}
-                  title={service.title}
-                  
-                />
+                <ProjectCard key={image} image={image} title={service.title} />
               )),
           )}
         </div>

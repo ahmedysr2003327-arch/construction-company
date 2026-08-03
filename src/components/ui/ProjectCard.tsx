@@ -12,7 +12,7 @@ export default function ProjectCard({ title, image }: Props) {
       <div className="relative h-72 overflow-hidden">
         <Image
           src={image}
-          alt={`${title} `}
+          alt={`مشروع ${title} لمؤسسه كنوز الذوق`}
           fill
           className="object-cover transition duration-500 group-hover:scale-110"
           sizes="(max-width:768px) 100vw,

@@ -14,7 +14,7 @@ export const company = {
 
   address: "جدة، المملكة العربية السعودية",
 
-  website: "https://konoozalthoq.com",
+  website: "https://kanouz-alzooq.com",
 
   logo: "/images/logo/logo.jpg",
 

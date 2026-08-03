@@ -8,8 +8,8 @@ export default function Services() {
     <section id="services" className="py-24">
       <Container>
         <SectionTitle
-          title="خدماتنا"
-          subtitle="نقدم مجموعة متكاملة من خدمات التشطيبات والديكورات بأعلى جودة."
+          title="خدمات التشطيبات والديكورات في جدة"
+          subtitle="نقدم مجموعة متكاملة من خدمات التشطيبات والديكورات في جدة، بما في ذلك الجبس بورد، البلاط، الدهانات، الكهرباء، السباكة والواجهات الزجاجية."
         />
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

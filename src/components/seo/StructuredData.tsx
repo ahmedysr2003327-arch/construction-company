@@ -1,19 +1,34 @@
+import { company } from "@/data/company";
+
 export default function StructuredData() {
   const data = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "كنوز الذوق",
+    "@type": ["LocalBusiness", "Organization"],
+    name: company.name,
     description:
-      "مقاول متخصصة في التشطيبات الداخلية والخارجية والديكورات والسباكة والكهرباء والجبس بورد والواجهات الزجاجية.",
-    telephone: "+966500401269",
-    areaServed: "Jeddah",
+      "مؤسسه متخصصة في التشطيبات الداخلية والخارجية، الديكورات، الجبس بورد، البلاط، الدهانات، الكهرباء، السباكة، والواجهات الزجاجية في جدة.",
+    url: company.website,
+    telephone: company.phone,
+    email: company.email,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Jeddah",
+      addressLocality: "جدة",
+      addressRegion: "منطقة مكة المكرمة",
       addressCountry: "SA",
+      streetAddress: company.address,
     },
-    url: "https://your-domain.com",
-    image: "https://your-domain.com/images/logo/logo.jpg",
+    areaServed: [
+      {
+        "@type": "City",
+        name: "جدة",
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "السعودية",
+      },
+    ],
+    image: `https://kanouz-alzooq.com${company.logo}`,
+    sameAs: [`https://wa.me/${company.whatsapp}`, company.website],
   };
 
   return (

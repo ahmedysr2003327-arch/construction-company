@@ -22,7 +22,9 @@ export default function Footer() {
               <div>
                 <h3 className="text-xl font-bold">{company.name}</h3>
 
-                <p className="text-sm text-slate-400">للتشطيبات والديكورات</p>
+                <p className="text-sm text-slate-400">
+                  مقاول تشطيبات وديكورات في جدة
+                </p>
               </div>
             </div>
 

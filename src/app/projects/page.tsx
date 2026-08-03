@@ -22,7 +22,9 @@ export default function ProjectsPage() {
           <h1 className="text-4xl font-bold">جميع مشاريعنا</h1>
 
           <p className="mt-4 text-slate-300">
-            استعرض أحدث أعمال كنوز الذوق في التشطيبات والديكورات بجدة.
+            استعرض أحدث أعمال كنوز الذوق في جدة، بما يشمل التشطيبات الداخلية
+            والخارجية، الديكورات، الجبس بورد، البلاط، الدهانات، الكهرباء
+            والسباكة.
           </p>
         </div>
         <div className="mb-8 flex justify-start">
