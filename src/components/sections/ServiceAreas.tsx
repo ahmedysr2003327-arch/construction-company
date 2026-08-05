@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 
 export const areas = [
@@ -113,9 +113,24 @@ export const areas = [
 
 export default function ServiceAreas() {
   const [showAll, setShowAll] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const visibleAreas = showAll ? areas : areas.slice(0, 20);
 
+  const handleToggle = () => {
+    if (showAll) {
+      setShowAll(false);
+
+      setTimeout(() => {
+        buttonRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }, 0);
+    } else {
+      setShowAll(true);
+    }
+  };
   return (
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
@@ -136,7 +151,8 @@ export default function ServiceAreas() {
       {areas.length > 10 && (
         <div className="mt-8 text-center">
           <button
-            onClick={() => setShowAll(!showAll)}
+            ref={buttonRef}
+            onClick={handleToggle}
             className="rounded-lg bg-amber-500 px-6 py-3 text-white"
           >
             {showAll ? "عرض أقل" : "عرض جميع الأحياء"}
