@@ -28,6 +28,9 @@ export const servicesGallery = [
     images: [
       "/images/projects/gypsum/1.jpg",
       "/images/projects/gypsum/2.jpg",
+      "/images/projects/gypsum/3.jpg",
+      "/images/projects/gypsum/4.jpg",
+      "/images/projects/gypsum/5.jpg",
     ],
   },
   {

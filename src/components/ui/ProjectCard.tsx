@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaLocationDot } from "react-icons/fa6";
 
 type Props = {
   title: string;
@@ -12,7 +13,7 @@ type Props = {
 export default function ProjectCard({
   title,
   image,
-  category,
+
   description,
   location,
   alt,
@@ -32,18 +33,14 @@ export default function ProjectCard({
       </div>
 
       <div className="flex flex-col gap-3 p-6">
-        <div className="flex flex-wrap items-center gap-2">
-          {category && (
-            <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700">
-              {category}
-            </span>
-          )}
-          {location && (
-            <span className="text-sm text-slate-500">📍 {location}</span>
-          )}
-        </div>
-
         <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+
+        {location && (
+          <span className="mt-1 flex items-center gap-1.5 text-sm text-slate-500">
+            <FaLocationDot className="text-base shrink-0" />
+            <span>{location}</span>
+          </span>
+        )}
 
         {description && (
           <p className="text-sm leading-7 text-slate-600">{description}</p>

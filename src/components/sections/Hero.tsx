@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 import Container from "../ui/Container";
 
 import Reveal from "../animations/Reveal";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -12,15 +13,15 @@ export default function Hero() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Text */}
             <div className="space-y-6">
-              <span className="rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-700">
+              {/* <span className="rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-700">
                 مقاول تشطيبات وديكور في جدة
-              </span>
+              </span> */}
 
               <h1 className="text-4xl font-extrabold leading-tight text-slate-900 lg:text-6xl">
                 تشطيبات وديكورات احترافية في جدة مع جودة تثبتها الأعمال
               </h1>
               <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-5 py-2 text-amber-700">
-                📍 نخدم جميع أحياء جدة والمناطق المجاورة
+                <FaLocationDot /> نخدم جميع أحياء جدة
               </div>
               <p className="text-lg leading-8 text-slate-600">
                 نقدم خدمات التشطيبات الداخلية والخارجية، الديكورات، الجبس بورد،

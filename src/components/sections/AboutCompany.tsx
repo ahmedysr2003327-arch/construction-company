@@ -30,7 +30,7 @@ export default function AboutCompany() {
           subtitle="مقاول تشطيبات وديكورات في جدة يقدم حلولًا متكاملة من التشطيبات إلى الديكورات والواجهات بأعلى مستوى من الجودة."
         />
 
-        <div className="mx-auto mt-12 max-w-5xl rounded-3xl bg-slate-50 p-8 shadow-sm md:p-12">
+        <div className="mx-auto mt-12 max-w-7xl rounded-3xl bg-slate-50 p-8 shadow-sm md:p-12">
           <p className="text-lg leading-9 text-slate-700">
             <span className="font-bold text-slate-900">كنوز الذوق</span> هي
             مؤسسه سعودية رائدة في مجال المقاولات والتشطيبات، تأسست عام
@@ -44,10 +44,6 @@ export default function AboutCompany() {
             الديكورات، الجبس بورد، الدهانات، الكهرباء، السباكة، الواجهات
             الزجاجية، الكلادينج، وأعمال الحديد، مع الالتزام بأعلى معايير الجودة
             والإتقان.
-          </p>
-
-          <p className="mt-6 rounded-xl bg-amber-50 p-4 text-center font-semibold text-amber-700">
-            📍 نقدم خدماتنا في جميع أحياء جدة والمناطق المجاورة.
           </p>
 
           <div className="mt-12 grid grid-cols-2 gap-5 md:grid-cols-4">

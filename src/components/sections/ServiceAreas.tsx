@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import Container from "../ui/Container";
 
 export const areas = [
   "حي أبحر الشمالية",
@@ -133,32 +134,34 @@ export default function ServiceAreas() {
   };
   return (
     <>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-        <h2 className="col-span-full text-center text-2xl font-bold text-amber-600 mb-4">
-          نخدم جميع أحياء جدة
-        </h2>
-        {visibleAreas.map((area) => (
-          <div
-            key={area}
-            className="flex items-center gap-2 rounded-lg border bg-white p-3"
-          >
-            <FaLocationDot className="text-amber-600" />
-            {area}
-          </div>
-        ))}
-      </div>
-
-      {areas.length > 10 && (
-        <div className="mt-8 text-center">
-          <button
-            ref={buttonRef}
-            onClick={handleToggle}
-            className="rounded-lg bg-amber-500 px-6 py-3 text-white"
-          >
-            {showAll ? "عرض أقل" : "عرض جميع الأحياء"}
-          </button>
+      <Container>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+          <h2 className="col-span-full text-center text-2xl font-bold text-amber-600 mb-4">
+            نخدم جميع أحياء جدة
+          </h2>
+          {visibleAreas.map((area) => (
+            <div
+              key={area}
+              className="flex items-center gap-2 rounded-lg border bg-white p-3"
+            >
+              <FaLocationDot className="text-amber-600" />
+              {area}
+            </div>
+          ))}
         </div>
-      )}
+
+        {areas.length > 10 && (
+          <div className="mt-8 text-center">
+            <button
+              ref={buttonRef}
+              onClick={handleToggle}
+              className="rounded-lg bg-amber-500 px-6 py-3 text-white"
+            >
+              {showAll ? "عرض أقل" : "عرض جميع الأحياء"}
+            </button>
+          </div>
+        )}
+      </Container>
     </>
   );
 }

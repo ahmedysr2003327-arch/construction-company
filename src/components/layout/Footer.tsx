@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "../ui/Container";
 import { company, footerServices, quickLinks } from "@/data/footer";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -71,7 +72,10 @@ export default function Footer() {
 
               <li>✉ {company.email}</li>
 
-              <li>📍 {company.address}</li>
+              <li className="flex items-center gap-2">
+                <FaLocationDot className="shrink-0" />
+                <span>{company.address}</span>
+              </li>
             </ul>
           </div>
         </div>
