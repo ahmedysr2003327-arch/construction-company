@@ -3,7 +3,7 @@ import { statistics } from "@/data/statistics";
 
 export default function Statistics() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="grid grid-cols-2 gap-8 rounded-2xl bg-slate-900 p-10 text-center text-white md:grid-cols-4">
           {statistics.map((item) => (

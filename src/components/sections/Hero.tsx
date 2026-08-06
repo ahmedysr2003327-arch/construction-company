@@ -8,15 +8,11 @@ import { FaLocationDot } from "react-icons/fa6";
 export default function Hero() {
   return (
     <Reveal>
-      <section id="home" className="py-24 lg:py-15 ">
+      <section id="home" className="py-10 lg:py-15 ">
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Text */}
             <div className="space-y-6">
-              {/* <span className="rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-700">
-                مقاول تشطيبات وديكور في جدة
-              </span> */}
-
               <h1 className="text-4xl font-extrabold leading-tight text-slate-900 lg:text-6xl">
                 تشطيبات وديكورات احترافية في جدة مع جودة تثبتها الأعمال
               </h1>
