@@ -8,21 +8,25 @@ import { FaLocationDot } from "react-icons/fa6";
 export default function Hero() {
   return (
     <Reveal>
-      <section id="home" className="py-10 lg:py-15 ">
+      <section id="home" className="py-10 lg:py-15">
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Text */}
             <div className="space-y-6">
               <h1 className="text-4xl font-extrabold leading-tight text-slate-900 lg:text-6xl">
-                تشطيبات وديكورات احترافية في جدة مع جودة تثبتها الأعمال
+                كنوز الذوق للمقاولات والتشطيبات في جدة
               </h1>
+
               <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-5 py-2 text-amber-700">
-                <FaLocationDot /> نخدم جميع أحياء جدة
+                <FaLocationDot />
+                نخدم جميع أحياء جدة
               </div>
+
               <p className="text-lg leading-8 text-slate-600">
-                نقدم خدمات التشطيبات الداخلية والخارجية، الديكورات، الجبس بورد،
-                الكهرباء، البلاط، الكلادينج والواجهات الزجاجية في جدة بخبرة
-                عالية ومعايير تنفيذ دقيقة.
+                نقدم خدمات المقاولات والتشطيبات الداخلية والخارجية في جدة،
+                وتشطيب الفلل والشقق، والديكورات، والجبس بورد، والدهانات،
+                والبلاط، والكهرباء، والسباكة، والكلادينج والواجهات الزجاجية، مع
+                الاهتمام بجودة التنفيذ ودقة التفاصيل.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -40,7 +44,7 @@ export default function Hero() {
             <div className="relative">
               <Image
                 src="/images/hero/hero.jpg"
-                alt="مشروع تشطيب وديكور احترافي لمؤسسه كنوز الذوق في جدة"
+                alt="مشروع تشطيبات داخلية وديكورات في جدة من تنفيذ كنوز الذوق"
                 width={650}
                 height={550}
                 className="rounded-3xl object-cover shadow-xl"
