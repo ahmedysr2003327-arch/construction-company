@@ -4,9 +4,10 @@ import Container from "../ui/Container";
 import { navigationLinks } from "@/data/navigation";
 import Image from "next/image";
 import { useState } from "react";
-import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 import useActiveSection from "@/hooks/useActiveSection";
+import { FaBars } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -70,10 +71,14 @@ export default function Navbar() {
             </a>
           </div>
           <button
+            type="button"
+            aria-label="فتح قائمة التنقل"
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-3xl text-slate-700"
           >
-            {isOpen ? <HiOutlineX /> : <HiOutlineMenu />}
+            {isOpen ? <FaXmark /> : <FaBars />}
           </button>
         </nav>
         {isOpen && (
