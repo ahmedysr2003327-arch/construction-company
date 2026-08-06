@@ -3,32 +3,45 @@ import { company } from "@/data/company";
 export default function StructuredData() {
   const data = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Organization"],
+    "@type": "Contractor",
+
+    "@id": `${company.website}/#business`,
+
     name: company.name,
+
     description:
-      "مؤسسه متخصصة في التشطيبات الداخلية والخارجية، الديكورات، الجبس بورد، البلاط، الدهانات، الكهرباء، السباكة، والواجهات الزجاجية في جدة.",
+      "كنوز الذوق للمقاولات والتشطيبات تقدم خدمات المقاولات والتشطيبات الداخلية والخارجية وتشطيب الفلل والشقق والجبس بورد والدهانات والبلاط والكهرباء والسباكة والواجهات الزجاجية والكلادينج وأعمال الحديد في جدة.",
+
     url: company.website,
-    telephone: company.phone,
-    email: company.email,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "جدة",
-      addressRegion: "منطقة مكة المكرمة",
-      addressCountry: "SA",
-      streetAddress: company.address,
-    },
-    areaServed: [
-      {
-        "@type": "City",
-        name: "جدة",
-      },
-      {
-        "@type": "AdministrativeArea",
-        name: "السعودية",
-      },
-    ],
+
+    telephone: "+966565063320",
+
     image: `https://kanouz-alzooq.com${company.logo}`,
-    sameAs: [`https://wa.me/${company.whatsapp}`, company.website],
+
+    areaServed: {
+      "@type": "City",
+      name: "جدة",
+      addressCountry: "SA",
+    },
+
+    serviceType: [
+      "المقاولات",
+      "التشطيبات الداخلية",
+      "التشطيبات الخارجية",
+      "تشطيب الفلل",
+      "تشطيب الشقق",
+      "الجبس بورد",
+      "الدهانات",
+      "البلاط والسيراميك",
+      "الكهرباء",
+      "السباكة",
+      "الواجهات الزجاجية",
+      "الكلادينج",
+      "أعمال الحديد",
+      "تصميم المخططات",
+    ],
+
+    sameAs: [`https://wa.me/${company.whatsapp}`],
   };
 
   return (

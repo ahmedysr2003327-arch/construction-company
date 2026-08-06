@@ -132,36 +132,60 @@ export default function ServiceAreas() {
       setShowAll(true);
     }
   };
-  return (
-    <>
-      <Container>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-          <h2 className="col-span-full text-center text-2xl font-bold text-amber-600 mb-4">
-            نخدم جميع أحياء جدة
-          </h2>
-          {visibleAreas.map((area) => (
-            <div
-              key={area}
-              className="flex items-center gap-2 rounded-lg border bg-white p-3"
-            >
-              <FaLocationDot className="text-amber-600" />
-              {area}
-            </div>
-          ))}
-        </div>
 
-        {areas.length > 10 && (
-          <div className="mt-8 text-center">
-            <button
-              ref={buttonRef}
-              onClick={handleToggle}
-              className="rounded-lg bg-amber-500 px-6 py-3 text-white"
+  return (
+    <section
+      id="service-areas"
+      className="bg-slate-50 py-24"
+      aria-labelledby="service-areas-title"
+    >
+      <Container>
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <h2
+              id="service-areas-title"
+              className="text-3xl font-bold text-slate-900"
             >
-              {showAll ? "عرض أقل" : "عرض جميع الأحياء"}
-            </button>
+              مناطق خدمة المقاولات والتشطيبات في جدة
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-600">
+              نقدم خدمات المقاولات والتشطيبات والديكورات في مختلف أحياء جدة،
+              وتشمل أعمال التشطيب الداخلي والخارجي والجبس بورد والدهانات والبلاط
+              والكهرباء والسباكة والواجهات.
+            </p>
           </div>
-        )}
+
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {visibleAreas.map((area) => (
+              <div
+                key={area}
+                className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-slate-700 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <FaLocationDot
+                  aria-hidden="true"
+                  className="shrink-0 text-amber-600"
+                />
+
+                <span>{area}</span>
+              </div>
+            ))}
+          </div>
+
+          {areas.length > 20 && (
+            <div className="mt-10 text-center">
+              <button
+                ref={buttonRef}
+                type="button"
+                onClick={handleToggle}
+                className="rounded-lg bg-amber-500 px-6 py-3 font-semibold text-white transition hover:bg-amber-600"
+              >
+                {showAll ? "عرض أقل" : "عرض جميع الأحياء"}
+              </button>
+            </div>
+          )}
+        </div>
       </Container>
-    </>
+    </section>
   );
 }
