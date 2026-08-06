@@ -43,11 +43,12 @@ export default function Hero() {
             {/* Image */}
             <div className="relative">
               <Image
-                src="/images/hero/hero.jpg"
+                src="/images/hero/hero.webp"
                 alt="مشروع تشطيبات داخلية وديكورات في جدة من تنفيذ كنوز الذوق"
-                width={650}
-                height={550}
-                className="rounded-3xl object-cover shadow-xl"
+                width={1599}
+                height={899}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="w-full rounded-3xl object-cover shadow-xl"
                 priority
               />
             </div>
