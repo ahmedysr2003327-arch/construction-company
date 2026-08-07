@@ -2,7 +2,6 @@ import Image from "next/image";
 import Button from "../ui/Button";
 import Container from "../ui/Container";
 
-import Reveal from "../animations/Reveal";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function Hero() {
